@@ -1,0 +1,11 @@
+---
+# file: site.yml
+
+- name: Install and configure nginx webserver on CentOS
+  hosts: all
+  sudo: yes
+  gather_facts: no
+
+  roles:
+    - common
+    - users
